@@ -1,0 +1,5 @@
+﻿  server_main.cpp
+c:\dev_vitae\winsock_server\server\server\server_main.cpp(52): warning C4101: "iSendResult": lokalna zmienna, do której nie istnieje odwołanie
+c:\dev_vitae\winsock_server\server\server\server_main.cpp(160): warning C4101: "iSendResult": lokalna zmienna, do której nie istnieje odwołanie
+  Server.vcxproj -> C:\dev_Vitae\winSock_Server\Server\Debug\Server.exe
+  Server.vcxproj -> C:\dev_Vitae\winSock_Server\Server\Debug\Server.pdb (Partial PDB)

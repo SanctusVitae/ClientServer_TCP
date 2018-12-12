@@ -1,0 +1,8 @@
+﻿  server_main.cpp
+server_main.cpp(52): warning C4101: "iSendResult": lokalna zmienna, do której nie istnieje odwołanie
+server_main.cpp(160): warning C4101: "iSendResult": lokalna zmienna, do której nie istnieje odwołanie
+  Trwa generowanie kodu
+  All 140 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Zakończono generowanie kodu
+  Server.vcxproj -> C:\dev_Vitae\winSock_Server\Server\Release\Server.exe
+  Server.vcxproj -> C:\dev_Vitae\winSock_Server\Server\Release\Server.pdb (Full PDB)
