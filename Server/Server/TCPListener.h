@@ -12,6 +12,18 @@ class cTCPListener;
 // Message handler callback function
 typedef void*(MsgRecvHandler)(cTCPListener* listenerObject, u_int socketID, std::string msgData);
 
+class cTCPClient
+{
+public:
+		SOCKET		m_Socket;
+		std::string m_ClientIP;
+		std::string m_ClientID;
+
+		cTCPClient(SOCKET clientSocket, std::string clientIP, std::string clientID)
+			: m_Socket(clientSocket), m_ClientIP(clientIP), m_ClientID(clientID) {}
+		cTCPClient(SOCKET clientSocket, )
+};
+
 class cTCPListener {
 private:
 	std::string		m_MsgData;
@@ -24,8 +36,10 @@ public:
 	~cTCPListener();
 
 public:
-	bool	SendMsg(SOCKET clientSocket, std::string msgSend);		// Sends a message to specified client
-	bool	RecvMsg(SOCKET clientSocket, std::string msgRecv);
+	static bool Init();
+	bool		SendMsg(SOCKET clientSocket,	std::string msg);		// Sends a message to specified client
+	bool		SendMsg(cTCPClient client,		std::string msg);
+	bool		RecvMsg(SOCKET clientSocket,	std::string msg);
 
 	// initialize winsock
 	// open socket
